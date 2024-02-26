@@ -1,7 +1,11 @@
-import React from 'react'
 
-export default function TeamPage() {
+import React from 'react'
+import TeamCardSection from './sections/team-card-section'
+
+export default function TeamsPage() {
   return (
-    <div>TeamPage</div>
+    <>
+      <TeamCardSection />
+    </>
   )
 }

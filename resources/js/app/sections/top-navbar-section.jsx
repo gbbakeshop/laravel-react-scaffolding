@@ -3,18 +3,20 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import TopNavbarLink from '../components/top-navbar-link'
 import { useLocation } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 
 
 
 export default function TopNavbarSection() {
   const {pathname } = useLocation()
+  const {value} = useSelector((state) => state.app)
  const path = pathname.split('/')[1]
   const navigation = [
-    { name: 'Dashboard', href: '/', current: path == '' },
+    { name: 'Dashboard'+value, href: '/', current: path == '' },
     { name: 'Team', href: '/team', current: path == 'team' },
     { name: 'Projects', href: '/project', current: path == 'project' },
-    { name: 'Calendar', href: '#', current: path == 'calendar' },
+    { name: 'Calendar', href: '/calendar', current: path == 'calendar' },
   ]
   useEffect(() => {
     console.log(path)
@@ -47,6 +49,7 @@ export default function TopNavbarSection() {
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
+                    
                     {navigation.map((item,index) => (
                         <TopNavbarLink 
                         key={index}

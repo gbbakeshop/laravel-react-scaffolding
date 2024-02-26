@@ -18,6 +18,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/home', function () {
+    return view('welcome');
+});
+Route::get('/login', function () {
+    return view('welcome');
+});
+Route::get('/register', function () {
+    return view('welcome');
+});
+Route::get('/password/reset', function () {
+    return view('welcome');
+});
+
+
+
 Route::get('/{jsx?}',function(){
     return view('welcome');
 })->where('jsx','[\/\w\.-]*')->middleware('guest');

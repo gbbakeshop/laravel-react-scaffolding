@@ -1,7 +1,8 @@
+
 import React from 'react'
 
-export default function ProductPage() {
+export default function ProjectsPage() {
   return (
-    <div>ProductPage</div>
+ <></>
   )
 }

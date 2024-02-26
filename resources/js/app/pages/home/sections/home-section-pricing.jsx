@@ -18,8 +18,7 @@ export default function HomeSectionPricing() {
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">My Development Pricing</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas
-            in. Explicabo id ut laborum.
+          Here's a simplified breakdown of how you might approach pricing your development services:
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
@@ -47,7 +46,7 @@ export default function HomeSectionPricing() {
               <div className="mx-auto max-w-xs px-8">
                 <p className="text-base font-semibold text-gray-600">Pay once, own it forever.</p>
                 <p className="mt-6 flex items-baseline justify-center gap-x-2">
-                  <span className="text-5xl font-bold tracking-tight text-gray-900">$20</span>
+                  <span className="text-5xl font-bold tracking-tight text-gray-900">$8</span>
                   <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">USD per hour</span>
                 </p>
                 <a
