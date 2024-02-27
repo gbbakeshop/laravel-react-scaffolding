@@ -13,10 +13,10 @@ export default function TopNavbarSection() {
   const {value} = useSelector((state) => state.app)
  const path = pathname.split('/')[1]
   const navigation = [
-    { name: 'Dashboard'+value, href: '/', current: path == '' },
-    { name: 'Team', href: '/team', current: path == 'team' },
+    { name: 'Dashboard', href: '/', current: path == '' },
+    // { name: 'Team', href: '/team', current: path == 'team' },
     { name: 'Projects', href: '/project', current: path == 'project' },
-    { name: 'Calendar', href: '/calendar', current: path == 'calendar' },
+    // { name: 'Calendar', href: '/calendar', current: path == 'calendar' },
   ]
   useEffect(() => {
     console.log(path)
